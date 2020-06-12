@@ -1,0 +1,363 @@
+
+<HTML>
+<HEAD>
+<TITLE>Chapter 1 -- Fundamentals of Java</TITLE>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#0000EE" VLINK="#551A8B" ALINK="#CE2910">
+<H1><FONT SIZE=6 COLOR=#FF0000>CHAPTER&nbsp;1</FONT></H1>
+<H1><FONT SIZE=6 COLOR=#FF0000>Fundamentals of Java </FONT></H1>
+<P>
+<I><B>by Debasis Samnata</B></I>
+<HR>
+<P>
+<CENTER><B><FONT SIZE=5><A NAME="CONTENTS">CONTENTS</A></FONT></B></CENTER>
+<UL>
+<LI><A HREF="#Introduction">
+Introduction</A>
+<LI><A HREF="#Java Programming Paradigms">
+Java Programming Paradigms</A>
+<UL>
+<LI><A HREF="#Object-Oriented Programming">
+Object-Oriented Programming</A>
+<LI><A HREF="#Platform Independent Programming Environment ">
+Platform Independent Programming Environment </A>
+<LI><A HREF="#Multithreading ">
+Multithreading</A>
+<LI><A HREF="#Security in Java">
+Security in Java</A>
+</UL>
+<LI><A HREF="#ADVANTAGES OF JAVA">
+Advantages of Java</A>
+<UL>
+<LI><A HREF="#Easy Development of Large Applications">
+Easy Development of Large Applications</A>
+<LI><A HREF="#Simple, Portable, and Robust Programming">
+Simple, Portable, and Robust Programming</A>
+<LI><A HREF="#High Performance of Java ">
+High Performance of Java </A>
+<LI><A HREF="#Internet Access Capability ">
+Internet Access Capability </A>
+<LI><A HREF="#Distributed Computing with  Java ">
+ Distributed Computing with  Java </A>
+</UL>
+<LI><A HREF="#TOOLS AVAILABLE FOR JAVA PROGRAMMING ">
+Tools Avaialbale for Java Programming</A>
+<UL>
+<LI><A HREF="#Java Developer�s Kit (JDK)">
+Java   Developer�s Kit (JDK)</A>
+<LI><A HREF="#Java Packages ">
+Java Packages </A>
+<LI><A HREF="#Java -Enabled Web Browser ">
+Java -Enabled Web Browser </A>
+<LI><A HREF="#Other Third-party Tools ">
+Other Third-party Tools </A>
+</UL>
+<LI><A HREF="#Assignment">
+Assignment<BR>
+</A>
+<LI><A HREF="#QampABR">
+Q&amp;A<BR>
+</A>
+</UL>
+<hr>  
+
+<P>
+<H2><A NAME="Introduction"><FONT SIZE=5 COLOR=#FF0000>
+Introduction</FONT></A></H2>
+<P>
+IT industries goes on such a diversification that  recent programming style should not confide within a single PC rather it spreads from a single user environment to main frame, to network, to network of networks . Or in other words, a giant program can be developed using mini programs which were developed by other geographically distributed programmers and this is also just on line. Now- a- days, such a distributed programming language and environment is no more an intellectual gossip but a reality and it is Java the Internet programming language which makes the whole world accessible from any point on it..
+<P>
+Java, the web-savvy programming language is developed by Sun and the Internet with the intent to  create a dynamic, object oriented programming language suitable for use of  the same types of development tasks as C and C++, but without the difficulties and sources of bugs common to those languages. This is why Java has been touted as � a better C++�; it contains all the essential OOP features but with reduced complexities than in C++. Sun describes Java as a �simple, object-oriented, distributed, interpreted, robust, secure, architecture neutral, portable, high-performance, multithreaded, and dynamic language�.
+<P>
+In this Chapter, we will briefly highlight over various features of Java programming, superiority of Java over other programming languages, and then tools available for Java programming.
+
+<H2><A NAME="Java programming paradigms "><FONT SIZE=5 COLOR=#FF0000>
+Java programming paradigms</FONT></A></H2>
+<P>
+Java programming concept possesses all the advanced  programming features that the recent programming languages hold, in addition to these it holds something special which makes it the first of its kind. Following sections are to brief the major characteristics of Java programming.
+<H3><A NAME="Object Oriented Programming">
+Object Oriented Programming</A></H3>
+<P>
+Java is an object Oriented Programming (OOP) language. It incorporates almost every OOP features. Object creation through object template i.e. class, data abstraction and encapsulation, data and code sharing through inheritance, overloading concept through polymorphism, and data/process  hiding etc. are some basic OOP features in Java, Java is a bit like C++ but more simpler than aristocrat C++. In fact, it is elegant language wherein the poorly understood, erratic, and redundant features of C++ have been eliminated. There are no business of pointers in Java - only lightly bounded heterogeneous collection of data/object. Absence of any kind of pointers means free from huge bugs because pointers manipulation is one of the richest source of bugs in almost all programs. Java is sophisticated enough to help programmers to express complex ideas . Here, global data and stand-alone function are not possible, again, unlike C/C++. The basic programming components in Java is objects which directly or indirectly decedent from the forefathers of classes. The class definition in Java permits both static and dynamic binding and therefore full reuse of code and data sharing. Java is truly Object Oriented Programming in the sense that many class definition can be inherited dynamically. However, Java does not support multiple inheritance whose semantic and usage has been quite controversial. Type casting or operator overloading is also not allowed in Java.<BR>
+<H3><A NAME="Platform Independent Programming Environment ">
+Platform Independent Programming Environment </A></H3>
+<P>
+The microprocessor that is inside every computer can understand and execute only the machine codes i.e. in terms of 0�s and 1�s. But using high level programming, programmers use source code (English like) and using a translator, code is converted into the machine code relevant to the microprocessor. As the machine codes varies from microprocessor to microprocessor so what we need is that for same source code but for different microprocessor type different translator. Hence, a program (source code) when converted into the machine code for an Intel chip will vary from the version for a Motorola chip, which again will be different from the version for Sun workstation. The same problem exists in case of computers having same microprocessors but different operating systems. 
+<P>
+Java has overcome this problem of architecture and environment dependency. Java solves this problem using the concept what is called Java Virtual Machine (JVM). This JVM specifies wonderfully detailed with a dummy CPU  and dummy instruction set that looks like standard assembly code. The Java compiler transforms the source programs into the instructions of JVM. The compiled Java code in known as byte code instruction (which are assembly code according to JVM).  Next, Java interpreter is there which is specific to each environment (processor and OS) and converts the byte code instructions into the native processor instructions before executing it. Thus, converting a program source into an object  code is compile half way and interpret half way. <B>Figure  1.1 </B> illustrates this mechanism. 
+<P>
+<CENTER>
+<figure>
+    <img src="figure1.1.jpg"/>
+	<BR>
+    <figcaption><B>Figure  1.1 </B>: Compilation of Java source code into object code
+    </figcaption>
+</figure>
+</CENTER>
+
+
+<P>
+As the Java byte codes are architecture and operating system independent they are highly portable and can be executed on any system without change. This platform independence is illustrated in <B>Figure  1.2 </B>
+<P>
+<CENTER>
+<figure>
+    <img src="figure1.2.jpg"/>
+	<BR>
+    <figcaption><B>Figure  1.2 </B>:Platform independent Java programming
+    </figcaption>
+</figure>
+</CENTER>
+<P>
+<P>
+Using the conventional programming languages like C  or Pascal, if we need a slice of memory we have to allocate it and then to returns it to the system we are finished with it, Thus, here memory management is solely decided by the programmer. This overhead is eliminated in Java. Here, a program does not need to be  malicious to suck up memory and not release it. Java controls all of the memory, Java�s run time system supports automatic garbage collectors based memory management system. Every once in a while, it will scan through all of the objects in a process to see if any of them are not used. The obsolete objects are reclaimed from the memory. As there  no explicit memory manipulation is required by the programmer, so Java programs are highly robust
+<P>
+<H3><A NAME="Multithreading ">
+Multithreading  </A></H3>
+<P>
+Another important contribution of Java is the support of multithreading. The multithreading is basically, the ability to run several tasks within the context of one large application. In more simpler version, a program is a list of instructions , and path through list of instructions is often called the thread of execution. In many cases, execution of a program through multiple threads makes more sense. For an example, suppose, a program needs to open a  file, draw some thing on the screen, and print out something else. Each of these may require waiting for access to some resource. A multithreaded program can, in effect, start up three different threads of executions for these tasks. If the printing thread is waiting for more paper to be loaded in the printer, then the file thread and drawing thread can continue operating. In Java multithreading interpreter can keep track of all threads and switch among  all of them, giving each a fair share of the processor�s attention. For most applications, multithreading improves interactive performance and real time system development. The multithreading  encourages Java to interface and support several features of modern operating systems and network protocols. 
+<P>
+<H3><A NAME="Security in Java ">
+Security in Java  </A></H3>
+<P>
+Java is based on client /sever technology, After the accomplishment of source code into byte code translation, Java programs are in effect down loaded from host machines and then run on one�s client machine. Since Java programs are down  loaded from all over the world, some precautions are needed to prevent malafide pieces of code called computer viruses embedded within the programs, causing problems to the recipient system and spreading it around. This therefore demands that distributed applications have to exhibit the highest level of security concerns. A byte code verifier in the Java interpreter looks at the incoming byte codes and verifies whether the compiled code is strictly language compliant, in case it founds illegal code, the run time system rejects the code  and refuses to run it; thus trapping all malafide codes. Once the strict verification is over, the application proceeds to run and by this Java impotents security holes if any.
+
+<H2><A NAME="Advantages of Java"><FONT SIZE=5 COLOR=#FF0000>
+Advantages of Java</FONT></A></H2>
+<P>
+This section is to give the answer of �Why Java? �. Following points are included as answer of this question.
+<H3><A NAME="Easy Development of Large Applications">
+Easy Development of Large Applications</A></H3>
+<P>
+Object oriented methodology in Java enables the software system developers to develop large complex applications with a little effort. Experienced software developers understands that software systems are dynamic in nature i.e. in continuous evolution. Keeping this in mind, the dynamic binding in Java can be utilized to furnish a surprising advantages of code reusability. Here, unlike C++, a change of a base class need not require to recompile of derived classes. Application can be embedded dynamically. Here, linkage manipulations are deferred until run time. This concept  envisages easy to modification and  ability to upgrade in the existing system
+<H3><A NAME="Simple, Portable, and Robust Programming">
+Simple, Portable, and Robust Programming</A></H3>
+<P>
+Writing Java code is almost English like and is similar to writing codes in other programming languages.<BR>
+<P>
+
+Java programs are portable because they can be executed in any environment without any substantial change. The Java bytecodes are independent of any  underlying architecture, characters are uni-code based for internationally portable applications. If one use certain I/O classes, one can render data portable on Java code. For example, the DataInputStream and DataOutputStream, there are two classes in Java, utilize external data representation to normalize one�s data to a network format. In other words, data can be used by many different types of processors and machines. Currently, Java run time environments exists are SolariesTM 2.x, (SPARC  and x86), Win32 (Windows 95 and Windows NT), OS/2, Macintosh Systems 7.5 for Power PCs,  HP/Unix etc.
+<p>
+Java programs are robust because there is no need of explicit memory manipulation. Memory address cannot be deferred nor can pointer arithmetic be used to access object contents. Array bounds are checked so that array indices are never out-of-bounds.
+
+<H3><A NAME="High Performance of Java ">
+High Performance of Java </A></H3>
+<P>
+Already mentioned that execution of programs in Java is a two steps process compile half way and interpret half way. But why an interpreter? 
+<p>
+An interpreter reads every line, converts it into machine code of the system and then execute it . Every line of source code has to be converted to machine code every time it executes making the application painfully slow. On the other hand, compiler compiles the entire source code into machine code before starting the execution and speed up the overall process. The only draw backs with the compiler is that  an executabel code can work only on one type of system often specific to an operating system. You can not compile code if you have no knowledge of the machine you are compiling it for.
+<BR>
+<P>
+But to match the same program into various environment. It was studied that the simplest solution is to look for an interpreter. Interpreter being as slow as they are, and compiled code being as fast as it is, the Java developer therefore decided to strike the middle ground in order to optimize the whole. In fact, most commands of one CPU machine code match with those of another, instruction to load and move data, to add and subtract numbers etc. form the basic building blocks of  assembly programming and are often similar. Therefore, translating the source code into JVM code and then to that of, say, for Pentium, would not be as slow as in conventional interpreting. It is realized that by making a little compromise both ways, much has been achieved - the high performance computing environment.
+<H3><A NAME="Internet Access Capability">
+Internet Access Capability</A></H3>
+<P>
+It is well known that marriage of computer and communication gave the birth to today�s information society. After the successful maturity of ARPANET (Advanced Research Projects Agency Network), now Internet is a rapidly evolving network of networks, which essentially consists of very powerful computing systems with a variety of capabilities through a high speed (even with the speed of light) and large band width communication channels. To be sure, Internet facilitating communication among the computers connected in it and data or information can be conveniently transferred to and from any computer, anywhere in the world at the click of mouse. Through the Internet, a chunk of information can be simultaneously shared and read by people scattered around the globe. Information over the Internet is actually multimedia, which include text, graphics, images and sound. With Internet there is  Web (short for World Wide Web, more commonly also written as WWW ). It is a wide area  hypermedia (also called hypertext) information retrieval system, introduced by a group of physicists at the CERN European Laboratory for Particle Physics in Geneva, Switzerland in 1991. Web is to facilitate online documentation to give universal access to a very large universe of documents. WWW on the Internet utilize hyperlinks to make immediate network connectivity to any site of the world.
+<P>
+It was a challenge to create a document that looked like a simple document to a user on a computer system, but were actually spread across multiple systems in different parts of the world. But with the WWW   and the Internet boom, the whole world is now a simple page.<BR>
+<P>
+The Java programming concept is now poised to change the way Internet is currently being used. Currently  hypertext documents comprise multimedia i.e. combination of text, data, audio, graphics, pictures - still or movie. Maintaining and retrieving such a multimedia base hypertext is a technological challenge to Internet people. For an example, if a web document with features that include non standard/ incompatible extension to the html are  made, most Browser may ignore them because the underlying computer systems (clients) are incapable of supporting them. In addition, the transmission of multimedia based documents over the network involved a large channel band width - as a consequence, such documents may not be transmitted in their complete form  on most client systems. Moreover, documents may run into trouble. This is because, the  code marked in the text by the composer is specific to the local processor and operating system and  hence may not be executed in the client systems.
+<p>
+Given these problems to the Internet people, here is an obvious need to devise a programming language which can yield a sophisticated, system independent hypertext so that user from different system compatibility can share information. Truly speaking, Java  is to turn Internet and WWW into one giant computer so that Net and Web will be common storehouse for billion of data and application unit. One can  down load the required application from the Net into one�s system, use it and it will be automatically deleted from the system after it use.
+
+<H3><A NAME="Distributed Computing with  Java ">
+Distributed Computing with  Java </A></H3>
+<P>
+Java is the first concrete example that moves to component and  distributed computing. It envisages a new type of programming environment in which a program is truly task oriented and disposable. One can enjoy the benefits of the execution of ready made compiled code as single statement which can be dynamically down loaded from any  where (may be too remote ) in the network of  heterogeneous  systems and executed transparently. This is the dream most software developer have had for  years.
+
+<H2><A NAME="Tools Available for Java Programming"><FONT SIZE=5 COLOR=#FF0000>
+Tools Available for Java Programming</FONT></A></H2>
+<p>
+The tools those are essential /available for Java programming environment are JDK(Java Developer�s Kit),  Java Packages, Java Enabled web browsers and other Third party tools. Each of these are briefly outlined below :<BR>
+
+<H3><A NAME="Java Developer�s Kit (JDK)">
+Java   Developer�s Kit (JDK)  </A></H3>
+<p>
+The Java Developer�s Kit from Java Soft, a division of Sun Micro systems, contains the basic tools and libraries necessary for creating and executing Java programs. It consist of a library of standard classes and a collection of utilities for building, testing, and documenting  Java programs. The core Java Application  Programming Interface (API) is the aforementioned library of prefabricated classes. One need these classes to access the core functionality of the Java language. The core Java API includes some important language construct (including string data types and exceptions ), as well as basic graphics,  network, and file I/O. As for the JDK utilities, there are seven main programs in the kit :<BR>
+<P>
+<PRE>
+1.<B>javac</B>:The Java compiler. This program compiles Java source codes into byte codes.
+2.<B>java</B>:The Java interpreter. This program runs Java byte codes.
+3.<B>javadoc</B>:Generates API documentation in HTML format from Java source code.
+4.<B>appletviewer</B>:A Java interpreter that executes Java applet (a special kind of Java Program) classes.
+5.<B>jdb</B>:The Java debugger.  Helps us find and fix bugs in Java programs.
+6.<B>javap</B>:The Java disassembler. Displays the accessible functions and data in a compiled class file. It  also displays the meaning of the byte codes.
+7.<B>javah</B>:Creates C header files that can be used to make C routines, that can call Java routines,or make C routines that can be called by Java programs. 
+
+</PRE>
+<P><I>JDK is a free software and can be  down loaded  from Java Soft�s web site at  http://java .sun.com</I>
+
+<H3><A NAME="Java Packages ">
+Java Packages </A></H3>
+<P>
+The Java language provides suite of packages that include a windowing tool kit, utilities,, general I/O, tools, and networking. Following mentioned six packages are very popular:<BR>
+<P>
+<PRE>
+1.<B>java.applet</B>: This package includes classes designed for use within an applet. There is one class, Applet and three interfaces AppletContex, AppletStub, and AudioClip.
+2.<B>java.awt</B> :The Abstract Windowing Toolkit (AWT) package, awt, contains classes used to generate widgets and GUI  (Graphical User Interface) components. This package includes the classes: Button, CheckBox, Choice, Component, Graphics, Menu, Panel, TextArea, and TextField.
+3.<B>java.io </B> :The I/O Package include file input and output classes such as the classes FileInputStream and FileOutputStream. File  I/O in subject to Security Control in applets.
+4.<B>java.lang</B>:This package includes the Java language classes, including Object, Thread, Exception, System, Integer, Float, Math, String, and so on.
+5.<B>java.net</B> :This class supports the TCP/IP networking protocols and includes the Socket, SenverSocket, DatagramPacket, DategramSocket, URL, and URLConnection classes among others.
+6.<B>java.util</B>:This class packages contains miscellaneons classes that are useful for a variety of programming chores. Those classes include Date, Dictionary, Random (for creating random number), Vector, and Stack (for implementing a last-in-first-out  (LIFO) stack).
+</PRE>
+
+<H3><A NAME="Java -Enabled Web Browser  ">
+Java -Enabled Web Browser </A></H3>
+<p>
+With Internet, Web Browser is a very important program. A Web Browser is nothing but a viewer program used by the client machine to display Web documents. A Jab-Enabled browser is a browser that supports Java applets. Currently many Java-capable Web Browser are known, out of which, most popular are HotJava, Netscape Navigator, and Microsoft Internet Explorer. All these Browser software are free releases and can be down loaded from the respective manufacturer�s web site as listed below:<BR>
+<P>
+1.HotiJova from Java soft�s Web site  <a href="http://java.sun.com">http://java.sun.com</a> <BR>
+2.Navigator from Netscape�s home page<a href="http://home.netscape.com ">  http://home.netscape.com </a> <BR>
+3.Internet Explorer from Microsoft�s Web page <a href="http://www.microsoft.com">http://www.microsoft.com </a>
+<H3><A NAME="Other Third-party Tools ">
+Other Third-party Tools </A></H3>
+<p>
+A lot of third party tools are currently available in the market in order to support the productivity of the software development using Java. Important of them are listed as below:<BR>
+<P>
+<PRE>
+1.<B>Sun�s Java Workshop dev 5</B> from Sun�s Javasoft provids most robust development environment for Java. The recent addition with this is Visual Java. 
+2.<B>Ed for Windows</B> from Soft As It Get provides an Integrated Development Environment ( IDE) for Java. It makes Java programming extremely easy and also provides one of the most powefull source code editor. 
+3.<B>Mojo</B> from Penumbra Software is one of the best visual environments for creating Java applets. Its primary goal is to allow rapid generation of Java applets without writing code.
+4.<B>Jamba</B> from Aimtech and IBM is another graphical  applet builder and very powerful in Java environment.
+5.<B>Semantic Cafe </B>from Semantic another very powerful and is fully integrated Development Environment (IDE). This is aimed for professional application developers and programmers. Currently Cafe is the de facto standard for Java development on Windows NT/95.
+</pre>
+<HR>
+<H2><A NAME="Assignment"><FONT SIZE=5 COLOR=#FF0000>
+Assignment<BR>
+</FONT></A></H2>
+<TABLE>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>Explain JDK, JRE and JVM.</B>
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>Why Java is platform independent?</B>
+</TD></TR>
+<BR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>Why java is not 100% Object-oriented?</B>
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>List any five features of Java?</B>
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>Which component is used to compile, debug and execute java program?</B>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>Which component is responsible to run java program?</B>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>What is use of interpreter?</B>
+
+</TD></TR>
+</TABLE>
+</CENTER>
+<H2><A NAME="QampABR"><FONT SIZE=5 COLOR=#FF0000>
+Q&amp;A<BR>
+</FONT></A></H2>
+<TABLE>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>I know a lot about HTML, but not much about computer programming. Can I still write Java programs?</B>
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>A:</B></CENTER></TD><TD>If you have no programming experience whatsoever, you most likely will find programming Java significantly more difficult than HTML. However, Java is an excellent language to learn programming 
+with, and if you patiently work through the examples and the exercises in this book, you should be able to learn enough to get started with Java.
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>What's the relationship between JavaScript and Java?</B>
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>A:</B></CENTER></TD><TD>They have the same first four letters.
+<BR>
+A common misconception in the Web world today is that Java and JavaScript have more in common than they actually do. Java is the general-purpose programming language that you'll learn about in this book; you use it to create applets. JavaScript is a 
+Netscape-invented scripting language that looks sort of like Java; with it you can do various nifty things in Web pages. They are independent languages, used for different purposes. If you're interested in JavaScript programming, you'll want to pick up 
+another book, such as Teach Yourself JavaScript in a Week</FONT> or Laura Lemay's Web Workshop: JavaScript</FONT>, both also available from Sams.net Publishing.
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>What is Hot Java?</B>
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>A:</B></CENTER></TD><TD>
+<li>Hot Java was the first Web browser that could download and play (execute) Java applets.
+<li>Hot Java, created by Sun, is simply a browser, much like the Netscape Navigator or Microsoft's Internet Exploere.
+<li>Although Hot Java was the first browser to support Java applets, many browsers now support or will soon support applets.
+<li>Starting with Netscape Navigator 2.0 for example, you can play Java applets for many platforms (Windows 95, the Mac and so on.).
+<li>Another distinguishing feature of Hot Java is that unlike most browsers which are written in C/C++.
+<li>Hot Java browser is written with the Java programming language.
+</li>
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>I followed all the directions you gave for creating a Java applet. I loaded it into HotJava, but Hello World didn't show up. What did I do wrong?</B>
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>A:</B></CENTER></TD><TD>Don't use HotJava to view applets you've created in this book; get a more up-to-date browser such as Netscape or Internet Explorer. HotJava was an experimental browser and has not been updated 
+since soon after its original release. The steps you take to define and write an applet have changed since then, and the applets you write now will not run on HotJava.
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>What is static in Java?</B>
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>A:</B></CENTER></TD><TD>Static means one per class, not one for each object no matter how many instance of a class might exist. This means that you can use them without creating an instance of a class.<br>
+Static methods are implicitly final, because overriding is done based on the type of the object and static methods are attached to a class, not an object.<br>
+A static method in a superclass can be shadowed by another static method in a sub class, as long as the original method was not declared final.<br>
+However, you can't override a static method with a non static method. In other words, you can't change a static method into an instance method of a subclass.<br>
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>Why java does not support pointers?</B>
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>A:</B></CENTER></TD><TD>Because pointers are unsafe, Java uses reference types to hide pointer and programmers feel easier to deal with reference types without pointers.
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>I'm using Notepad on Windows to edit my Java files. The program insists on adding a <TT><B>.txt</B></TT> extension to all my files, regardless of what I name them (so I always end up with 
+files like <TT><B>HelloWorld.java.txt</B></TT>). Short of renaming them before I compile them, what else can I do to fix this?</B>
+</TD></TR>
+
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>What is a platform?</B>
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>A:</B></CENTER></TD><TD>A platform is the hardware or software environment in which a program runs.<BR>
+Most platforms can be described as a combination of the operating system and hardware, like Windows 2000/XP, Linux, Solaris and MacOs.
+</TD></TR>
+
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>What is a JVM consists of?</B>
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>A:</B></CENTER></TD><TD>Each time of a Java Application is executed then an instance of JVM, responsible for its running, is created.<BR>
+A JVM instance is described in terms of subsystems, memory areas, data types, and instructions.
+</TD></TR>
+
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>How Java enabled high performance?</B>
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>A:</B></CENTER></TD><TD>Java uses Just In Time compiler to enable high performance.<BR>
+Just-In-Time compiler is a program that runs Java bytecode, which is a program that contains instructions that must be interpreted into instructions that can be sent directly to the processor.
+</TD></TR>
+
+
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>What is JTI compiler?</B>
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>A:</B></CENTER></TD><TD>Just In Time compiler: It is used to improve the performance.<BR>
+JIT compiles parts of the byte code that have similar functionality at the same time, and hence reduces the amount of time needed for compilation.<BR>
+Here the term compiler refers to translator from the instruction set of a Java virtual machine (JVM) to the instruction set of a specific CPU.
+</TD></TR>
+
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>Q:</B></CENTER></TD><TD><B>What are the supported platforms by Java Programming Languages?</B>
+</TD></TR>
+<TR VALIGN=TOP><TD WIDTH=40><CENTER><B>A:</B></CENTER></TD><TD>	Java runs on a variety of platforms, such as
+<PRE>
+Windows
+Mac OS and
+The various versions of UNIX/Linux like
+HP-Unix
+Sun Solaris
+Redhat Linux
+Ubuntu
+CentOS etc.
+</PRE>
+</TD></TR>
+</TABLE>
+</CENTER>
+<HR>
+
+<CENTER><P>
+<A HREF="#CONTENTS"><IMG SRC="img1/a.gif" BORDER=0 HEIGHT=40 WIDTH=70></A>
+<A HREF="index.htm"><IMG SRC="home.gif" BORDER=0 HEIGHT=40 WIDTH=70></A>
+<HR WIDTH="100%"></P></CENTER>
+<ul class="pager">
+  <li class="previous"><a href="index.htm"><IMG SRC="pre.gif" BORDER=0 HEIGHT=10 WIDTH=70></a></li>
+  <li class="next"><a href="ch2.htm"><IMG SRC="next.gif" BORDER=0 HEIGHT=10 WIDTH=70></a></li>
+</ul>
+</BODY>
+</HTML>
+
+<html></html>
+<html></html>
+<html></html>
+<html></html>
+<html></html>
+<html></html>
+<html></html>
+<html></html>
+<html></html>
+<html></html>
+<html></html>

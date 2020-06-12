@@ -1,0 +1,158 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+<br>
+<hr>
+<div class="row">
+	<aside class="col-sm-6">
+<section class="card">
+<div class="card-body p-5">
+	<Welcome to the payment portal !!!>
+<p class=" alert bg-success">Payment details</p>
+<form role="form">
+<div class="form-group">
+<label for="username">Full name (on the card)</label>
+<div class="input-group">
+	<div class="input-group-prepend">
+		<span class="input-group-text"><i class="fa fa-user"></i></span>
+	</div>
+	<input type="text" class="form-control" name="username" placeholder="" required="">
+</div> 
+</div> 
+
+<div class="form-group">
+<label for="cardNumber">Card number</label>
+<div class="input-group">
+	<div class="input-group-prepend">
+		<span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+	</div>
+	<input type="text" class="form-control" name="cardNumber" placeholder="">
+</div> <!-- input-group.// -->
+</div> <!-- form-group.// -->
+
+<div class="row">
+    <div class="col-sm-8">
+        <div class="form-group">
+            <label><span class="hidden-xs">Expiration</span> </label>
+        	<div class="form-inline">
+        		<select class="form-control" style="width:45%">
+				  <option>MM</option>
+				  <option>01 - January</option>
+				  <option>02 - February</option>
+				  <option>03 - February</option>
+				</select>
+	            <span style="width:10%; text-align: center"> / </span>
+	            <select class="form-control" style="width:45%">
+				  <option>YY</option>
+				  <option>2018</option>
+				  <option>2019</option>
+				</select>
+        	</div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="form-group">
+            <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV <i class="fa fa-question-circle"></i></label>
+            <input class="form-control" required="" type="text">
+        </div> <!-- form-group.// -->
+    </div>
+</div> <!-- row.// -->
+<button class="subscribe btn btn-primary btn-block" type="button">Confirm</button>
+</form>
+</div> <!-- card-body.// -->
+</section> <!-- card.// -->
+	</aside> <!-- col.// -->
+	<aside class="col-sm-6">
+<p></p>
+<article class="card">
+<div class="card-body p-5">
+<ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
+	<li class="nav-item">
+		<a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
+		<i class="fa fa-credit-card"></i> Credit Card</a></li>
+	<li class="nav-item">
+		<a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
+		<i class="fab fa-paypal"></i>  Paypal</a></li>
+	<li class="nav-item">
+		<a class="nav-link" data-toggle="pill" href="#nav-tab-bank">
+		<i class="fa fa-university"></i>  Bank Transfer</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="nav-tab-card">
+	<p class="alert bg-success">Payment details</p>
+	<form role="form">
+	<div class="form-group">
+		<label for="username">Full name (on the card)</label>
+		<input type="text" class="form-control" name="username" placeholder="" required="">
+	</div> <!-- form-group.// -->
+	<div class="form-group">
+		<label for="cardNumber">Card number</label>
+		<div class="input-group">
+			<input type="text" class="form-control" name="cardNumber" placeholder="">
+			<div class="input-group-append">
+				<span class="input-group-text">
+					<i class="fa fa-cc-visa"></i>  
+					<i class="fa fa-cc-amex"></i>   
+					<i class="fa fa-cc-mastercard"></i> 
+				</span>
+			</div>
+		</div>
+	</div> <!-- form-group.// -->
+
+	<div class="row">
+	    <div class="col-sm-8">
+	        <div class="form-group">
+	            <label><span class="hidden-xs">Expiration</span> </label>
+	        	<div class="input-group">
+	        		<input type="number" class="form-control" placeholder="MM" name="">
+		            <input type="number" class="form-control" placeholder="YY" name="">
+	        	</div>
+	        </div>
+	    </div>
+	    <div class="col-sm-4">
+	        <div class="form-group">
+	            <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV <i class="fa fa-question-circle"></i></label>
+	            <input type="number" class="form-control" required="">
+	        </div> <!-- form-group.// -->
+	    </div>
+	</div> <!-- row.// -->
+	<button class="subscribe btn btn-primary btn-block" type="button"> Confirm  </button>
+	</form>
+</div> <!-- tab-pane.// -->
+<div class="tab-pane fade" id="nav-tab-paypal">
+<p>
+<button type="button" class="btn btn-primary"> <i class="fab fa-paypal"></i> Log in into  Paypal </button>
+</p>
+</div>
+<div class="tab-pane fade" id="nav-tab-bank">
+<p>Bank account details</p>
+<img src="img/nic.png" style="float: right;">
+<dl class="para">
+  <dt>NAME: </dt>
+  <dd> ANISH KATUWAL</dd>
+</dl>
+<dl class="param">
+  <dt>BANK: </dt>
+  <dd> NIC ASIA BANK LIMITED</dd>
+</dl>
+<dl class="param">
+  <dt>Account number: </dt>
+  <dd> 12345678912345</dd>
+</dl>
+</div> <!-- tab-pane.// -->
+</div> <!-- tab-content .// -->
+</div> <!-- card-body.// -->
+</article> <!-- card.// -->
+	</aside> <!-- col.// -->
+</div> <!-- row.// -->
+</div> <!--container end.//-->
+<div class="alert alert-success text-center" style="padding: 50px 50px 50px 50px;"><h2>THANK YOU !!!</h2></div>
+</body>
+</html>
